@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dbo
+    database: mpp_raw
+    schema: dbo
+    tables:
+      - name: imeiserialnumber

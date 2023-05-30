@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: base_smartboxrunninghours
+    columns:
+      - name: imei
+        description: 'International Mobile Equipment Identity: identifier of the smartbox coupled to the machine'
+      - name: date
+        description: 'timestamp when running hours where measured'
+        tests:
+          - unique
+      - name: runninghours
+        description: 'accumulated running hours of the machine'
+        tests:
+          - not_null
